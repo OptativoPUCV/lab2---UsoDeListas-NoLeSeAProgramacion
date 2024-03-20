@@ -148,8 +148,11 @@ int parentesisBalanceados(char *cadena)
           {
             return 0;
           }
+          
         }
+        
       }
+      i++;    
     }
   if(get_size(P) == 0)
   {
