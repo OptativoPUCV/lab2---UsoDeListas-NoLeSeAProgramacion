@@ -62,3 +62,14 @@ Wed 20 Mar 2024 08:27:47 PM UTC:
  tests:  3|2
 total_score: 40/70
 8f87c54
+Wed 20 Mar 2024 08:28:37 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:110:10: error: unused variable ‘P3’ [-Werror=unused-variable]
+  110 |   Stack* P3 = create_stack();
+      |          ^~
+cc1: all warnings being treated as errors
+Compilation failed
+1501502
