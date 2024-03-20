@@ -65,15 +65,12 @@ int sumaLista(List *L)
   int suma = 0;
   int* dato;
   dato = (int*)first(L);
+  
   while(dato != NULL)
     {
       suma += *dato;
-      dato = (int*)next(L);
-      
+      dato = (int*)next(L); 
     }
-    
-
-
   return suma;
 }
 
@@ -86,7 +83,18 @@ Asume que popCurrent luego de eliminar un elemento se
 posiciona en el elemento anterior.
 */
 
-void eliminaElementos(List*L, int elem){
+void eliminaElementos(List*L, int elem)
+{
+  int* dato;
+  dato = (int*)first(L);
+  while(dato != NULL)
+    {
+      if(*dato == elem)
+      {
+        popCurrent(L);
+      }
+      dato = (int*)next(L);
+    }
 
 }
 
