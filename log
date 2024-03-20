@@ -90,3 +90,9 @@ exercises.c:110:10: error: unused variable ‘P3’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 4edd97a
+Wed 20 Mar 2024 08:32:58 PM UTC: 
+ exercises.c | 10 ++++++----
+ 1 file changed, 6 insertions(+), 4 deletions(-)
+ tests:  4|1
+total_score: 50/70
+d841c1b
