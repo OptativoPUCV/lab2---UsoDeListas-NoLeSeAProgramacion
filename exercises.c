@@ -156,9 +156,13 @@ int parentesisBalanceados(char *cadena)
       i++;
       
     }
-  if(cadena[i] == '\0')
+  if(get_size(P) == 0)
   {
     return 1;
+  }
+  else
+  {
+    return 0;
   }
 
   return 0;
