@@ -133,6 +133,7 @@ int parentesisBalanceados(char *cadena)
 {
   Stack* P = create_stack();
   int i = 0;
+  
   while(cadena[i] != '\0')
     {
       if(cadena[i] == '(')
@@ -152,12 +153,9 @@ int parentesisBalanceados(char *cadena)
     }
   if(get_size(P) == 0)
   {
-    return 1;
-  }
-  else
-  {
     return 0;
   }
+
   
 }
 
