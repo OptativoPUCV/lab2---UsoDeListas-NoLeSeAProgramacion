@@ -184,3 +184,34 @@ exercises.c:145:69: error: expected statement before ‘)’ token
 cc1: all warnings being treated as errors
 Compilation failed
 1abc96c
+Wed 20 Mar 2024 08:49:04 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:139:28: error: expected expression before ‘||’ token
+  139 |       if(cadena[i] == '(') || cadena[i] == '[' || cadena[i] == '{')
+      |                            ^~
+exercises.c:139:7: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+  139 |       if(cadena[i] == '(') || cadena[i] == '[' || cadena[i] == '{')
+      |       ^~
+exercises.c:139:67: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  139 |       if(cadena[i] == '(') || cadena[i] == '[' || cadena[i] == '{')
+      |                                                                   ^
+exercises.c:139:67: error: expected statement before ‘)’ token
+exercises.c:143:7: error: ‘else’ without a previous ‘if’
+  143 |       else
+      |       ^~~~
+exercises.c:145:30: error: expected expression before ‘||’ token
+  145 |         if(cadena[i] == ')') || cadena[i] == ']' || cadena[i] == '}')
+      |                              ^~
+exercises.c:145:9: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+  145 |         if(cadena[i] == ')') || cadena[i] == ']' || cadena[i] == '}')
+      |         ^~
+exercises.c:145:69: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  145 |         if(cadena[i] == ')') || cadena[i] == ']' || cadena[i] == '}')
+      |                                                                     ^
+exercises.c:145:69: error: expected statement before ‘)’ token
+cc1: all warnings being treated as errors
+Compilation failed
+aa3256b
