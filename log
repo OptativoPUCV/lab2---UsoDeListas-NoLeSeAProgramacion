@@ -599,3 +599,20 @@ Sat 23 Mar 2024 02:40:06 PM UTC:
  tests:  7|1
 total_score: 60/70
 0c241fe
+Sat 23 Mar 2024 02:43:18 PM UTC: 
+ exercises.c | 39 +++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 39 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:149:23: error: comparison between pointer and integer [-Werror]
+  149 |             if(top(P) == '(')
+      |                       ^~
+exercises.c:162:25: error: comparison between pointer and integer [-Werror]
+  162 |               if(top(P) == '[')
+      |                         ^~
+exercises.c:175:27: error: comparison between pointer and integer [-Werror]
+  175 |                 if(top(P) == '{')
+      |                           ^~
+cc1: all warnings being treated as errors
+Compilation failed
+78d13c1
