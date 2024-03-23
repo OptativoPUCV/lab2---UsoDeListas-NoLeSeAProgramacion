@@ -556,3 +556,14 @@ arraylist.c:37:6: error: ‘pushFront’ defined but not used [-Werror=unused-fu
 cc1: all warnings being treated as errors
 Compilation failed
 dcc4071
+Sat 23 Mar 2024 02:39:07 PM UTC: 
+ exercises.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:147:36: error: ‘last’ undeclared (first use in this function)
+  147 |           if ((cadena[i] == ')' && last != '(') ||
+      |                                    ^~~~
+exercises.c:147:36: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+eed0898
