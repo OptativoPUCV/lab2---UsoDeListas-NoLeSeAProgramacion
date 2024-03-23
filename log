@@ -776,3 +776,20 @@ Sat 23 Mar 2024 03:38:49 PM UTC:
  tests:  7|1
 total_score: 60/70
 ab07999
+Sat 23 Mar 2024 03:44:49 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:145:40: error: comparison between pointer and integer [-Werror]
+  145 |         if((cadena[i] == ')' && top(P) == '(') || (cadena[i] == ']' && top(P) == '[') || (cadena[i] == '}' && top(P) == '{'))
+      |                                        ^~
+exercises.c:145:79: error: comparison between pointer and integer [-Werror]
+  145 |         if((cadena[i] == ')' && top(P) == '(') || (cadena[i] == ']' && top(P) == '[') || (cadena[i] == '}' && top(P) == '{'))
+      |                                                                               ^~
+exercises.c:145:118: error: comparison between pointer and integer [-Werror]
+  145 |         if((cadena[i] == ')' && top(P) == '(') || (cadena[i] == ']' && top(P) == '[') || (cadena[i] == '}' && top(P) == '{'))
+      |                                                                                                                      ^~
+cc1: all warnings being treated as errors
+Compilation failed
+2aa0615
