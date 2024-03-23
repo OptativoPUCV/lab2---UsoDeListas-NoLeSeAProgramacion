@@ -651,3 +651,20 @@ exercises.c:175:20: error: void value not ignored as it ought to be
 cc1: all warnings being treated as errors
 Compilation failed
 42582df
+Sat 23 Mar 2024 02:45:04 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:149:23: error: comparison between pointer and integer [-Werror]
+  149 |             if(top(P) == '(')
+      |                       ^~
+exercises.c:162:25: error: comparison between pointer and integer [-Werror]
+  162 |               if(top(P) == '[')
+      |                         ^~
+exercises.c:175:33: error: comparison between pointer and integer [-Werror]
+  175 |                 if((int*)top(P) == '{')
+      |                                 ^~
+cc1: all warnings being treated as errors
+Compilation failed
+cb798b9
