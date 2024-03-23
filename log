@@ -821,3 +821,17 @@ exercises.c:146:109: error: comparison between pointer and integer [-Werror]
 cc1: all warnings being treated as errors
 Compilation failed
 143df73
+Sat 23 Mar 2024 03:46:40 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:145:10: error: expected expression before ‘char’
+  145 |         *char *aux = top(P);
+      |          ^~~~
+exercises.c:146:33: error: ‘aux’ undeclared (first use in this function)
+  146 |         if((cadena[i] == ')' && aux == '(') || (cadena[i] == ']' && aux == '[') || (cadena[i] == '}' && aux == '{'))
+      |                                 ^~~
+exercises.c:146:33: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+7e3fa5d
