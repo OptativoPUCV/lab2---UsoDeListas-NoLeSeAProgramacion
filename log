@@ -770,3 +770,9 @@ exercises.c:153:118: error: comparison between pointer and integer [-Werror]
 cc1: all warnings being treated as errors
 Compilation failed
 cf8b4ff
+Sat 23 Mar 2024 03:38:49 PM UTC: 
+ exercises.c | 11 +----------
+ 1 file changed, 1 insertion(+), 10 deletions(-)
+ tests:  7|1
+total_score: 60/70
+ab07999
