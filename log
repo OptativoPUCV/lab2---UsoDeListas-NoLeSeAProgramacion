@@ -712,3 +712,18 @@ exercises.c:153:36: error: ‘topCh’ undeclared (first use in this function); 
 exercises.c:153:36: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 adf8455
+Sat 23 Mar 2024 03:32:48 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:152:12: error: expected expression before ‘char’
+  152 |           *char topCh = (*char)top(P);
+      |            ^~~~
+exercises.c:153:36: error: ‘topCh’ undeclared (first use in this function); did you mean ‘top’?
+  153 |           if ((cadena[i] == ')' && topCh == '(') || (cadena[i] == ']' && topCh == '[') || (cadena[i] == '}' && *topCh == '{'))
+      |                                    ^~~~~
+      |                                    top
+exercises.c:153:36: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+d688f98
