@@ -616,3 +616,20 @@ exercises.c:175:27: error: comparison between pointer and integer [-Werror]
 cc1: all warnings being treated as errors
 Compilation failed
 78d13c1
+Sat 23 Mar 2024 02:43:45 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:149:23: error: comparison between pointer and integer [-Werror]
+  149 |             if(top(P) == '(')
+      |                       ^~
+exercises.c:162:25: error: comparison between pointer and integer [-Werror]
+  162 |               if(top(P) == '[')
+      |                         ^~
+exercises.c:175:24: error: invalid use of incomplete typedef ‘Stack’ {aka ‘List’}
+  175 |                 if(top(*P) == '{')
+      |                        ^~
+cc1: all warnings being treated as errors
+Compilation failed
+1a1216a
