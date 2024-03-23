@@ -567,3 +567,29 @@ exercises.c:147:36: error: ‘last’ undeclared (first use in this function)
 exercises.c:147:36: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 eed0898
+Sat 23 Mar 2024 02:39:37 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:147:46: error: passing argument 1 of ‘top’ makes pointer from integer without a cast [-Werror=int-conversion]
+  147 |           if ((cadena[i] == ')' && top(cadena[i]) != '(') ||
+      |                                        ~~~~~~^~~
+      |                                              |
+      |                                              char
+In file included from exercises.c:7,
+                 from test.c:5:
+stack.h:14:18: note: expected ‘Stack *’ {aka ‘List *’} but argument is of type ‘char’
+   14 | void *top(Stack *stack) { return first(stack); }
+      |           ~~~~~~~^~~~~
+In file included from test.c:5:
+exercises.c:147:51: error: comparison between pointer and integer [-Werror]
+  147 |           if ((cadena[i] == ')' && top(cadena[i]) != '(') ||
+      |                                                   ^~
+exercises.c:148:34: error: ‘last’ undeclared (first use in this function)
+  148 |             (cadena[i] == ']' && last != '[') ||
+      |                                  ^~~~
+exercises.c:148:34: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+a304e8d
