@@ -150,7 +150,7 @@ int parentesisBalanceados(char *cadena)
             return 0;
           }
           char *topCh = (*char)top(P);
-          if ((cadena[i] == ')' && topCh == '(') || (cadena[i] == ']' && topCh == '[') || (cadena[i] == '}' && *topCh == '{')) 
+          if ((cadena[i] == ')' && topCh == '(') || (cadena[i] == ']' && topCh == '[') || (cadena[i] == '}' && topCh == '{')) 
           {
             pop(P);
           }
